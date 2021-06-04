@@ -1,73 +1,94 @@
+*{
+    margin: 0%;
+    padding: 0%;box-sizing: border-box;
+
+}
+
 body{
-    background-image: url('./img2.jpg');
+    font-family: 'Montserrat', sans-serif;
+}
+
+.banner{
+    width: 100vw;
+    height: 100vh;
+    background:url("/src/img/bg3.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.App{
-    height: 100vh;
-    width: 100vw;
-}
-
-
-
-*{
-    margin: 0%; 
-    padding: 0%;
-    box-sizing: border-box;
-}
-
-
-.main_nav{
-    position: absolute;
-    /* display: flex; */
-    
-     height: 23%;
-     width: 100%;
-     background-color:white;
-   
- 
- }
- .fist_nav{
-     /* background-color: red; */
-     height: 50%;
-     display: flex;
-     flex: 1;
-     /* margin-left: 20px; */
- }
- .upper_left{
-     position: relative;
-     top: 10px;
-     margin-left: 30px;
-     flex: 0.3;
-     display: flex;
-     flex-wrap: wrap;
-     width: 100%;
-     
- }
- .upper_right{
+    z-index: -1;
     position: relative;
-    top: 10px;
-     flex: 0.7 ;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-around;
-
- }
- 
- .snd_nav{
-     background-color: royalblue;
-     position: relative;
-     top: 15%;
- }
-
- /* .mynavbar{
-     background-color: white;
- } */
- 
- .navstyl{
-     font-weight: bold;
-     border-bottom: 1px solid white;
- }
-
- 
+}
+.banner__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 80vw;
+    max-width: 80vw;
+    /* background-color: aliceblue; */
+    margin: 0 auto;
+    color: white;
+}
+.container_text{
+/* background-color:teal ; */
+width: 35vw;
+}
+.container_text h3{
+    font-size: 30px;
+}
+.container_text h1{
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 800;
+    margin-top: 25px;
+}
+.container_text p{
+    font-size: 20px;
+    /* line-height: 16px; */
+    font-weight: 400;
+    margin-top: 25px;
+    
+}
+.navbar{
+ position: absolute;
+ display: flex;
+ top: 0;
+ left: 0 ;
+ /* background-color: tomato; */
+ width: 100vw;
+ height: 12vh;
+   
+}
+.Navbar_text{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40vw;
+    margin-left: 15px;
+    /* justify-content:; */
+    align-items: center;
+    color: white;
+    font-weight: 800;
+    font-size:20px;
+    /* background-color: thistle; */
+    
+    
+}
+.Navbar_menu{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    align-items: center;
+    justify-content:space-around;
+    width: 60vw;
+}
+.Navbar_menu ul li {
+    list-style-type: none;
+}
+.Navbar_menu ul li a {
+    padding: 0 15px;
+    color: white;
+    font-weight: 600;
+    
+    text-decoration: none;
+}
